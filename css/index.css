@@ -1,0 +1,93 @@
+body {
+	background-color: wait;
+	font-family: Verdana, sans-serif;
+}
+
+b {
+	font-size: 25px;
+}
+h1 {
+	text-align:center;
+}
+
+textarea {
+	width:100%
+}
+
+/*Заголовок*/
+.a1 {
+	background-color:gray;
+}
+
+/*Спорт изделие пол*/
+.a2 {
+	background-color:#18DCFB;
+	min-height: 700px;
+
+}
+
+/*мерки*/
+.a3 {
+	padding-top:20px;
+	background-color: #fbd86f;
+	min-height: 700px;
+	align-items:stretch;
+}
+
+/*кнопки*/
+.a4 {
+	background-color:gray;
+	min-height: 50px;
+}
+
+
+.a3 label {
+	width: 100%;
+    float: left;
+}
+
+.a3 input {
+	width: 50%;
+    float: right;
+}
+
+.buttons {
+	padding: 10px;
+	display:flex;
+	justify-content:space-between;
+}
+
+button {
+	border: none;
+	text-align: center;
+	background: #fbfa11;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #1966fb;
+	cursor: pointer;
+	padding: 5px;
+	margin: 5px;
+}
+
+button:disabled {
+	background: #fbd86f;
+	color: #18DCFB;
+	cursor: default;
+}
+
+.form-sportlist {
+	margin-top: 10px;
+}
+
+.form-fieldsetchooseproduct span {
+	width: 100%;
+    float: left;
+}
+
+.check-inp:focus {
+	border-color: #000000;
+}
+
+.empty {
+	background-color:#ff0000;
+}
