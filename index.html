@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Заказ</title>
+    <!-- Кодировка веб-страницы -->
+    <meta charset="utf-8">
+    <!-- Настройка viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Подключаем Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+	<!-- Подключаем наши стили-->
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<form>
+	<div class="container">
+		<div class="row">
+			<div class="a1 col-md-12"><h1><b>Заказ</b></h1></div>
+		</div>
+		<div class="row">
+			<div class="c1 col-md-6">
+				<div class="row">
+					<div class="a2 col-md-12">
+						<p class="form-sportlist"><b>Выберите вид спорта:</b><br />
+							<select name="sportlist" class="sportlist">
+								<option value="rg">Художественная гимнастика</option>
+								<option value="sg">Спортивная гимнастика</option>
+								<option value="fs">Фигурное катание</option>
+							</select>
+						</p>
+						<p class="form-typeorder"><b>Вид заказа:</b><br />
+							<label><input type="radio" name="typeorder" value="ind" class="typeorder" checked/> Индивидуальный</label><br />
+							<label><input type="radio" name="typeorder" value="group" class="typeorder" /> Групповой</label><br />
+						</p>
+						<p class="form-numberhumans">
+							<label>Укажите количество человек в группе:<input class="check-inp"  name='numberhumans' type='number' min=2 max="99"/></label>
+						</p>
+						<fieldset class="form-fieldsetchooseproduct">
+							<legend><b>Выберите изделие:</b></legend>
+							<p class="form-chooseproduct-rgProduct"><span>Художественная гимнастика:</span>
+								<select name="rg" class="form-rg">
+									<option value="rgSwimsuit">Купальник</option>
+									<option value="rgOveralls">Комбинезон</option>
+									<option value="rgOther">Другое (укажу в комментариях)</option>
+								</select>
+							</p>
+							<p class="form-chooseproduct-sgProduct"><span>Спортивная гимнастика:</span>
+								<select name="sg" class="form-sg">
+									<option value="sgSwimsuit">Купальник</option>
+									<option value="sgLeggings">Лосины</option>
+									<option value="sgOther">Другое (укажу в комментариях)</option>
+								</select>
+							</p>
+							<p class="form-chooseproduct-fsProduct"><span>Фигурное катание:</span>
+								<select name="fs" class="form-fs">
+									<option value="fsDress">Платье</option>
+									<option value="fsOveralls">Комбинезон</option>
+									<option value="fsShirt">Рубашка</option>
+									<option value="fsPants">Брюки</option>
+									<option value="fsOther">Другое (укажу в комментариях)</option>
+								</select>
+							</p>
+						</fieldset>
+						<fieldset class="form-choosesex">
+							<legend><b>Укажите пол:</b></legend>
+							<label><input name="sex" type="radio" value="male" class="sex" checked/> Мужской</label><br />
+							<label><input name="sex" type="radio" value="female" class="sex"/> Женский</label><br />
+						</fieldset>
+					</div>
+				</div>
+			</div>
+			<div class="c1 col-md-6">
+				<div class="row">
+					<div class="a3 col-md-12">
+						<fieldset class="form-inputsize">
+							<legend><b>Заполните Ваши мерки:</b></legend>
+							<label>Рост (см):<input class="check-inp" min="0" name="height" type="number" required/></label><br />
+							<label>Обхват туловища (см):<input class="check-inp"   min="0" max="299" name="body" type="number" /></label><br />
+							<label>Обхват груди (см):<input class="check-inp"  min="0" max="199" name="cheast" type="number" /></label><br />
+							<label>Обхват талии (см):<input class="check-inp"  min="0" max="199" name="waist" type="number" /></label><br />
+							<label>Обхват бедер (см):<input class="check-inp"  min="0" max="199" name="hips" type="number" /></label><br />
+							<label>Обхват шеи (см):<input class="check-inp"  min="0" max="99" name="neсk" type="number" /></label><br />
+							<label>Ширина плеча (см):<input class="check-inp"  min="0" max="199" name="shoulderWidth" type="number" /></label><br />
+							<label>Обхват плеча (см):<input class="check-inp"  min="0" max="99" name="shoulderGirth" type="number" /></label><br />
+							<p>Добавьте описание заказа:</p>
+							<textarea name="description" rows='2' maxlength='300' class="orderDescription"></textarea>
+						</fieldset>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="a4 col-md-12">
+				<div class="buttons">
+					<button class="nextProduct" type="button">Добавить следующее изделие</button>
+					<button class="nextHuman" type="button">Добавить изделие на следующего человека</button>
+					<button class="order" type="button">Оформить заказ</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+
+<script src="js/jquery-git.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+<!-- Подключаем наши скрипты -->
+<script src="js/index.js"></script>
+
+</body>
+</html>
