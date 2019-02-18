@@ -342,7 +342,7 @@ $(".order").click(function () {
     localStorage.clear();
     var serialOrder = JSON.stringify(order); //сериализуем Order для передачи в локал хранилище
     localStorage.setItem("localOrder", serialOrder); //запишем его в хранилище по ключу "localOrder"
-    window.open('order.html','_parent');
+    window.open('html/order.html','_parent');
 });
 
 
